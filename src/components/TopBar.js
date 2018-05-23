@@ -3,7 +3,10 @@ import {Link} from 'react-router-dom';
 import Button from './Button';
 
 export default class TopBar extends Component {
+  constructor(){
+    super(props)
   state: { loggedIn: false }
+  }
   render() {
     return (
       <header style={{
