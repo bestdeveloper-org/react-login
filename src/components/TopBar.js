@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 import Button from './Button';
 
 export default class TopBar extends Component {
-  constructor(){
+  constructor(props){
     super(props)
-  state: { loggedIn: false }
+    state: { loggedIn: false }
   }
   render() {
     return (
@@ -31,7 +31,7 @@ export default class TopBar extends Component {
         <div style={{float: 'left', color: 'white', flex: 1}} />
         <div style={{float: 'right', paddingRight: 20}}>
           <Button style={{backgroundColor: 'blue', color: 'white'}}>Login</Button>
-          <Button style={{backgroundColor: 'red', color: 'white'}}>Signup</Button>
+          <Button style={{backgroundColor: 'red', color: 'white'}}>Sign up</Button>
         </div>
       </header>
     );
