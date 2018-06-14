@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import Button from './Button';
+
+import Login from '../loginButton/Login';
+import SignUp from '../signUpButton/SignUp';
+
 
 export default class TopBar extends Component {
-  state: { loggedIn: false }
   render() {
     return (
       <header style={{
@@ -27,12 +29,12 @@ export default class TopBar extends Component {
         </div>
         <div style={{float: 'left', color: 'white', flex: 1}} />
         <div style={{float: 'right', paddingRight: 20}}>
-          <Button style={{backgroundColor: 'blue', color: 'white'}}>Login</Button>
-          <Button style={{backgroundColor: 'red', color: 'white'}}>Signup</Button>
+          <Login/>
+          <SignUp/>
         </div>
       </header>
     );
-  } 
+  }
 }
 
 const styles = {
