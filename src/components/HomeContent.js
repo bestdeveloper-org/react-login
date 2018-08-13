@@ -56,9 +56,9 @@ export default class HomeContent extends Component {
 // }
 
 function LoginButton(props) {
-  return <Button style={{backgroundColor: 'blue', color: 'white'}} onClick={props.onClick}>Login</Button>;
+  return <button type="button" class="btn btn-primary btn-lg" onClick={props.onClick} >Login</button>
 }
 
 function LogoutButton(props) {
-  return <Button  style={{backgroundColor: 'red', color: 'white'}} onClick={props.onClick}>Logout</Button>;
+  return <button type="button" class="btn btn-danger btn-lg" onClick={props.onClick} >Logout</button> 
 }
