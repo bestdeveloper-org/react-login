@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-// import Button from "./Button";
+import Button from './Button';
+
 export default class HomeContent extends Component {
   constructor(props) {
     super(props);
@@ -19,19 +20,18 @@ export default class HomeContent extends Component {
   render() {
     let name='Rares'
 
-    
     const isLoggedIn = this.state.isLoggedIn;
 
     let button = null;
     if (isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
+      button  = <LogoutButton onClick={this.handleLogoutClick} />;
     } else {
       button = <LoginButton onClick={this.handleLoginClick} />;
     }
 
     return (
       <div>
-        <h1>This is {name}'s app</h1>
+        <h2>This is {name}'s app</h2>
         {/* <Greeting isLoggedIn={isLoggedIn} /> */}
         {button}
       </div>
@@ -56,9 +56,9 @@ export default class HomeContent extends Component {
 // }
 
 function LoginButton(props) {
-  return <button onClick={props.onClick}>Login</button>;
+  return <Button style={{backgroundColor: 'blue', color: 'white'}} onClick={props.onClick}>Login</Button>;
 }
 
 function LogoutButton(props) {
-  return <button onClick={props.onClick}>Logout</button>;
+  return <Button  style={{backgroundColor: 'red', color: 'white'}} onClick={props.onClick}>Logout</Button>;
 }

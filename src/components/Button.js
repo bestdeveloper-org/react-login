@@ -11,7 +11,8 @@ export default class Button extends Component {
   render() {
     return (
       <div>
-        <h1>First commit</h1>
+        <h3>this is a paragraph</h3>
+        <p>First commit</p>
         <button style={{...styles.button, ...this.props.style}}>
           {this.props.children}
         </button>
