@@ -10,9 +10,12 @@ const styles = {
 export default class Button extends Component {
   render() {
     return (
-      <button style={{...styles.button, ...this.props.style}}>
-        {this.props.children}
-      </button>
+      <div>
+        <h1>First commit</h1>
+        <button style={{...styles.button, ...this.props.style}}>
+          {this.props.children}
+        </button>
+      </div>
     );
   }
 }
