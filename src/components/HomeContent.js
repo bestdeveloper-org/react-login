@@ -17,6 +17,9 @@ export default class HomeContent extends Component {
   }
 
   render() {
+    let name='Rares'
+
+    
     const isLoggedIn = this.state.isLoggedIn;
 
     let button = null;
@@ -28,6 +31,7 @@ export default class HomeContent extends Component {
 
     return (
       <div>
+        <h1>This is {name}'s app</h1>
         {/* <Greeting isLoggedIn={isLoggedIn} /> */}
         {button}
       </div>
